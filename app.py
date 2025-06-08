@@ -61,7 +61,6 @@ with st.container():
     left_column, right_column = st.columns(2)
     with left_column:
         st.header("Experience")
-        st.write("##")
         st.write(
             
         """
@@ -73,20 +72,19 @@ with st.container():
         My portfolio currently holds the below projects:
         - ParkingTicket Simulator (Java)
         - JoesAutomotive Cost Calculator (Java, JavaFx)
-        - Personal Webpage (Python, Streamlit, CSS, HTML)
+        - Personal Webpage (Python, CSS, HTML, Streamlit, Pillow)
 
         Check these out in more detail below!
         """)
 
     # Animation
     with right_column:
-       st_lottie(lottie_file, height=550, key="coding")
+       st_lottie(lottie_file, height=400, key="coding")
 
 # ----- PROJECTS -------
     with st.container():
         st.write("----")
         st.header("Portfolio")
-        st.write("##")
 
     # ---- TICKET -----
         image_column, text_column = st.columns([1, 2])
