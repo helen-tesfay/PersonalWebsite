@@ -24,7 +24,7 @@ style_css("Style/style.css")
 lottie_file = load_lottieurl("https://lottie.host/d7d83113-0460-40f7-b351-a61244ed9b9e/PfxGA5EEnx.json")
 
 # Images
-img_joes = os.path.join(os.getcwd(), "Images", "joesauto.jpg")
+img_joes = ("https://github.com/helen-tesfay/PersonalWebsite/blob/main/joesauto.jpg")
 img_joes_automotive = Image.open(img_joes)
 img_parking_ticket = Image.open("Images/parkingticket.jpg")
 img_ship_image = Image.open("Images/shipimage.jpg")
@@ -116,7 +116,7 @@ with st.container():
     # ---- JOES ----
         image2_column, text2_column = st.columns([1, 2])
         with image2_column:
-            st.image(img_joes_automotive)
+            st.image(img_joes)
         with text2_column:
             st.subheader("Joe's Automotive: Calculate your cost for a visit to Joe's!")
             st.write( 
