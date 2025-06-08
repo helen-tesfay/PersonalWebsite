@@ -40,29 +40,29 @@ with st.container():
     st.write("LinkedIn: https://linkedin.com/in/helen-h-tesfay")
 
 # ---- Background ----
-    custom_css = """
-    <style>
-        /* Main page background */
-       [data-testid="stAppViewContainer"] {
-       background-image: url("https://images.unsplash.com/photo-1528459105426-b9548367069b?q=80&w=1928&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
-       background-size: cover;
-       background-repeat: no-repeat;
-       background-position: center;
+#    custom_css = """
+#    <style>
+#       /* Main page background */
+#      [data-testid="stAppViewContainer"] {
+#      background-image: url("https://images.unsplash.com/photo-1528459105426-b9548367069b?q=80&w=1928&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+#      background-size: cover;
+#      background-repeat: no-repeat;
+#      background-position: center;
        }
 
-       /* Make header transparent */
-       [data-testid="stHeader"] {
-       background-color: rgba(0, 0, 0, 0);
-       }
+#      /* Make header transparent */
+#      [data-testid="stHeader"] {
+#      background-color: rgba(0, 0, 0, 0);
+#      }
 
-       /* Adjust the toolbar position
-       [data-testid="stToolbar"] {
-       right: 2rem;
+#     /* Adjust the toolbar position
+#     [data-testid="stToolbar"] {
+#      right: 2rem;
 
-       }
-    </style>
-"""
-st.markdown(custom_css, unsafe_allow_html=True)
+#      }
+#    </style>
+#"""
+#st.markdown(custom_css, unsafe_allow_html=True)
 
 # ---- Experience ---- 
 with st.container():
