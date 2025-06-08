@@ -50,12 +50,12 @@ with st.container():
         background-position: center;
         }
 
-        /* Make header transparent */
+        Make header transparent
         [data-testid="stHeader"] {
         background-color: rgba(0, 0, 0, 0);
         }
 
-        /* Adjust the toolbar position
+        Adjust the toolbar position
         [data-testid="stToolbar"] {
         right: 2rem;
 
