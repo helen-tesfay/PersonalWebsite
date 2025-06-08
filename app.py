@@ -73,12 +73,12 @@ with st.container():
         st.write(
             
         """
-        My experience includes the below achievements:
+        My experience includes the following key accomplishments:
         - Spring 2025 Dean's List
         - Fall 2024 Dean's List
         - Computer Science Club (CPS Club) Vice President/Secretary
 
-        My portfolio currently holds the below projects:
+        Selected highlights from my portfolio, with more available upon request:
         - ParkingTicket Simulator (Java)
         - JoesAutomotive Cost Calculator (Java, JavaFx)
         - Personal Webpage (Python, CSS, HTML, Streamlit, Pillow)
