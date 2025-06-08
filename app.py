@@ -13,12 +13,15 @@ def load_lottieurl(url: str):
         return None
       return r.json()
 
+# CSS styling for "Contact Me"
+def style_css(file_name):
+    with open(file_name) as f:
+        st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
+
+style_css("Style/style.css")
+
 # Animations
 lottie_file = load_lottieurl("https://lottie.host/d7d83113-0460-40f7-b351-a61244ed9b9e/PfxGA5EEnx.json")
-if lottie_file:
-    st_lottie(lottie_file)
-else:
-    st.error("Failed to load Lottie animation.")
 
 # Images
 img_joes = os.path.join(os.getcwd(), "Images", "joesauto.jpg")
@@ -142,3 +145,22 @@ with st.container():
                 """
             )
             st.markdown("GitHub Repository: https://github.com/helen-tesfay/Ship-CruiseShip-and-CargoShip-Classes")
+
+    # --- CONTACT ---
+    with st.container():
+        st.header("Let's Be Friends")
+
+        contact_field = """
+    <form action="https://formsubmit.co/htesfay033@gmail.com" method="POST">
+        <input type="hidden" name="_captcha" value="false">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <textarea name="message" placeholder="Your Message Here" required></textarea>
+        <button type="submit">Send</button>
+</form>
+"""
+        left_column, right_column = st.columns(2)
+        with left_column:
+            st.markdown(contact_field, unsafe_allow_html=True)
+        with right_column:
+            st.empty()
