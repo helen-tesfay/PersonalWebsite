@@ -25,8 +25,8 @@ lottie_file = load_lottieurl("https://lottie.host/d7d83113-0460-40f7-b351-a61244
 
 # Images
 img_joes_automotive = Image.open("joesauto.jpg")
-img_parking_ticket = Image.open("Images/parkingticket.jpg")
-img_ship_image = Image.open("Images/shipimage.jpg")
+img_parking_ticket = Image.open("parkingticket.jpg")
+img_ship_image = Image.open("shipimage.jpg")
 
 # ---- Intro ---- 
 with st.container():
