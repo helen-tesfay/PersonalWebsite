@@ -39,6 +39,18 @@ with st.container():
     st.write("GitHub: https://github.com/helen-tesfay")
     st.write("LinkedIn: https://linkedin.com/in/helen-h-tesfay")
 
+# --- Font ----
+st.markdown(
+    """
+    <style>
+    body {
+        font-family: Times New Roman", serif;
+    }
+    </style>
+    """,
+    unsafe_allow_html=True
+)
+
 # ---- Background ----
 # custom_css = 
 #      <style>
