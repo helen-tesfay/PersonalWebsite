@@ -1,3 +1,4 @@
+import os
 import requests
 import streamlit as st
 from PIL import Image
@@ -14,7 +15,9 @@ def load_lottieurl(url):
 
 # Animations/Images
 lottie_file = load_lottieurl("https://lottie.host/d7d83113-0460-40f7-b351-a61244ed9b9e/PfxGA5EEnx.json")
-img_joes_automotive = Image.open("Images/joesauto.jpg")
+
+img_joes = os.path.join(os.getcwd(), "Images", "joesauto.jpg")
+img_joes_automotive = Image.open(img_joes)
 img_parking_ticket = Image.open("Images/parkingticket.jpg")
 img_ship_image = Image.open("Images/shipimage.jpg")
 
