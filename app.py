@@ -6,12 +6,24 @@ from streamlit_lottie import st_lottie
 
 st.set_page_config(page_title="Welcome!", page_icon=":tada:", layout="wide")
 
-# --- Animations ---
+# Animations
 def load_lottieurl(url: str):
       r = requests.get(url)
       if r.status_code != 200:
         return None
       return r.json()
+
+# Font
+st.markdown(
+    """
+    <style>
+    body {
+        font-family: "Times New Roman", serif;
+    }
+    </style>
+    """,
+    unsafe_allow_html=True
+)
 
 # CSS styling for "Contact Me"
 def style_css(file_name):
@@ -20,7 +32,7 @@ def style_css(file_name):
 
 style_css("style.css")
 
-# Animations
+# Animation
 lottie_file = load_lottieurl("https://lottie.host/d7d83113-0460-40f7-b351-a61244ed9b9e/PfxGA5EEnx.json")
 
 # Images
@@ -38,18 +50,6 @@ with st.container():
     st.write("Email: helen.h.tesfay@gmail.com")
     st.write("GitHub: https://github.com/helen-tesfay")
     st.write("LinkedIn: https://linkedin.com/in/helen-h-tesfay")
-
-# --- Font ----
-st.markdown(
-    """
-    <style>
-    body {
-        font-family: "Times New Roman", serif;
-    }
-    </style>
-    """,
-    unsafe_allow_html=True
-)
 
 # ---- Background ----
 # custom_css = 
