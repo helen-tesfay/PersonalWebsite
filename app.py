@@ -14,16 +14,16 @@ def load_lottieurl(url: str):
       return r.json()
 
 # Font
-st.markdown(
-    """
-    <style>
-    body {
-        font-family: "Times New Roman", serif;
-    }
-    </style>
-    """,
-    unsafe_allow_html=True
-)
+# st.markdown(
+#    """
+#    <style>
+#    * {
+#        font-family: "Times New Roman", serif !important;
+#   }
+#    </style>
+#    """,
+#    unsafe_allow_html=True
+# )
 
 # CSS styling for "Contact Me"
 def style_css(file_name):
