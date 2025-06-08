@@ -44,7 +44,7 @@ st.markdown(
     """
     <style>
     body {
-        font-family: Times New Roman", serif;
+        font-family: "Times New Roman", serif;
     }
     </style>
     """,
