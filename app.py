@@ -24,7 +24,7 @@ style_css("style.css")
 lottie_file = load_lottieurl("https://lottie.host/d7d83113-0460-40f7-b351-a61244ed9b9e/PfxGA5EEnx.json")
 
 # Images
-img_joes_automotive = Image.open("Images/joesauto.jpg")
+img_joes_automotive = Image.open("joesauto.jpg")
 img_parking_ticket = Image.open("Images/parkingticket.jpg")
 img_ship_image = Image.open("Images/shipimage.jpg")
 
