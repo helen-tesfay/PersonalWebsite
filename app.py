@@ -7,15 +7,20 @@ from streamlit_lottie import st_lottie
 st.set_page_config(page_title="Welcome!", page_icon=":tada:", layout="wide")
 
 # --- Animations ---
-def load_lottieurl(url):
+def load_lottieurl(url: str):
       r = requests.get(url)
       if r.status_code != 200:
         return None
       return r.json()
 
-# Animations/Images
+# Animations
 lottie_file = load_lottieurl("https://lottie.host/d7d83113-0460-40f7-b351-a61244ed9b9e/PfxGA5EEnx.json")
+if lottie_file:
+    st_lottie(lottie_file)
+else:
+    st.error("Failed to load Lottie animation.")
 
+# Images
 img_joes = os.path.join(os.getcwd(), "Images", "joesauto.jpg")
 img_joes_automotive = Image.open(img_joes)
 img_parking_ticket = Image.open("Images/parkingticket.jpg")
