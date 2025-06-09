@@ -58,27 +58,27 @@ with st.container():
     st.write("LinkedIn: https://linkedin.com/in/helen-h-tesfay")
 
 # ---- Background ----
- custom_css = 
-      <style>
-     /* Main page background */
-        [data-testid="stAppViewContainer"] {
+custom_css =
+<style>
+    /* Main page background */
+    [data-testid="stAppViewContainer"] {
         background-image: url("https://preview.colorkit.co/color/5A0000.png?type=article-preview-logo&size=social&colorname=Spikey%20Red");
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
-       }
+    }
 
-       /* Make header transparent */
-        [data-testid="stHeader"] {
-        background-color: rgba(0, 0, 0, 0);
-        }
+    /* Make header transparent */
+    [data-testid="stHeader"] {
+       background-color: rgba(0, 0, 0, 0);
+    }
 
-        Adjust the toolbar position
-        [data-testid="stToolbar"] {
+    /* Adjust the toolbar position */
+    [data-testid="stToolbar"] {
         right: 2rem;
 
-       }
-        </style>
+    }
+</style>
 
 # st.markdown(custom_css, unsafe_allow_html=True)
 
