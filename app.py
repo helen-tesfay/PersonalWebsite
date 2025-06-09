@@ -62,7 +62,7 @@ custom_css = """
 <style>
     /* Main page background */
     [data-testid="stAppViewContainer"] {
-        background-image: url("https://preview.colorkit.co/color/5a0000.png?size=wallpaper&static=true");
+        background-image: url("https://preview.colorkit.co/color/d3d3d3.png?size=wallpaper&static=true");
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
