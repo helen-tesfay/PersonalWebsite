@@ -113,7 +113,7 @@ with st.container():
         st.write("----")
         st.header("Portfolio")
 
-    # ---- TICKET -----
+    # ---- PARKING TICKET -----
         image_column, text_column = st.columns([1, 2])
         with image_column:
             st.image(img_parking_ticket)
@@ -130,7 +130,7 @@ with st.container():
             )
             st.markdown("GitHub Repository: https://github.com/helen-tesfay/ParkingTicket")
 
-    # ---- JOES ----
+    # ---- JOE'S ----
         image2_column, text2_column = st.columns([1, 2])
         with image2_column:
             st.image(img_joes_automotive)
@@ -165,6 +165,7 @@ with st.container():
 
     # --- CONTACT ---
     with st.container():
+        st.write("##")
         st.header("Let's Be Friends")
 
         contact_field = """
