@@ -62,7 +62,7 @@ with st.container():
 #      <style>
 #     /* Main page background */
 #        [data-testid="stAppViewContainer"] {
-#        background-image: url("https://images.unsplash.com/photo-1528459105426-b9548367069b?q=80&w=1928&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+#        background-image: url("https://mail.google.com/mail/u/0?ui=2&ik=555e6e2fd2&attid=0.1&permmsgid=msg-f:1834487893547603407&th=1975690507a8d5cf&view=fimg&fur=ip&permmsgid=msg-f:1834487893547603407&sz=s0-l75-ft&attbid=ANGjdJ-6dZaQVAomWJxCx027Y7qdmSazAsVtyinvLK2TWg3ofSWiOySiZLea_08PBtpYeCKMGy38xoqoPZ4tNATxqX7Je2UBmAjVXhzYjY_P9CdpMgzA0XhY7Mojynk&disp=emb&realattid=ii_197568febe75c70b2e01&zw");
 #        background-size: cover;
 #        background-repeat: no-repeat;
 #        background-position: center;
@@ -99,7 +99,7 @@ with st.container():
         Selected highlights from my portfolio, with more available upon request:
         - ParkingTicket Simulator (Java)
         - JoesAutomotive Cost Calculator (Java, JavaFx)
-        - Personal Webpage (Python, CSS, HTML, Streamlit, Pillow)
+        - Personal Webpage (Python, CSS, Streamlit, Pillow)
 
         Check these out in more detail below!
         """)
