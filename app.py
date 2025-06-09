@@ -165,7 +165,7 @@ with st.container():
 
     # --- CONTACT ---
     with st.container():
-        st.write("##")
+        st.write("----")
         st.header("Let's Be Friends")
 
         contact_field = """
