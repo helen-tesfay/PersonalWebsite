@@ -58,7 +58,7 @@ with st.container():
     st.write("LinkedIn: https://linkedin.com/in/helen-h-tesfay")
 
 # ---- Background ----
-custom_css =
+custom_css = """
 <style>
     /* Main page background */
     [data-testid="stAppViewContainer"] {
@@ -66,11 +66,11 @@ custom_css =
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
-    }
+}
 
     /* Make header transparent */
     [data-testid="stHeader"] {
-       background-color: rgba(0, 0, 0, 0);
+        background-color: rgba(0, 0, 0, 0);
     }
 
     /* Adjust the toolbar position */
@@ -79,6 +79,7 @@ custom_css =
 
     }
 </style>
+"""
 
 # st.markdown(custom_css, unsafe_allow_html=True)
 
