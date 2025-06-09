@@ -58,27 +58,27 @@ with st.container():
     st.write("LinkedIn: https://linkedin.com/in/helen-h-tesfay")
 
 # ---- Background ----
-# custom_css = 
-#      <style>
-#     /* Main page background */
-#        [data-testid="stAppViewContainer"] {
-#        background-image: url("https://mail.google.com/mail/u/0?ui=2&ik=555e6e2fd2&attid=0.1&permmsgid=msg-f:1834487893547603407&th=1975690507a8d5cf&view=fimg&fur=ip&permmsgid=msg-f:1834487893547603407&sz=s0-l75-ft&attbid=ANGjdJ-6dZaQVAomWJxCx027Y7qdmSazAsVtyinvLK2TWg3ofSWiOySiZLea_08PBtpYeCKMGy38xoqoPZ4tNATxqX7Je2UBmAjVXhzYjY_P9CdpMgzA0XhY7Mojynk&disp=emb&realattid=ii_197568febe75c70b2e01&zw");
-#        background-size: cover;
-#        background-repeat: no-repeat;
-#        background-position: center;
-#       }
+ custom_css = 
+      <style>
+     /* Main page background */
+        [data-testid="stAppViewContainer"] {
+        background-image: url("https://preview.colorkit.co/color/5A0000.png?type=article-preview-logo&size=social&colorname=Spikey%20Red");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+       }
 
-#       /* Make header transparent */
-#        [data-testid="stHeader"] {
-#        background-color: rgba(0, 0, 0, 0);
-#        }
+       /* Make header transparent */
+        [data-testid="stHeader"] {
+        background-color: rgba(0, 0, 0, 0);
+        }
 
-#        Adjust the toolbar position
-#        [data-testid="stToolbar"] {
-#        right: 2rem;
+        Adjust the toolbar position
+        [data-testid="stToolbar"] {
+        right: 2rem;
 
-#       }
-#        </style>
+       }
+        </style>
 
 # st.markdown(custom_css, unsafe_allow_html=True)
 
