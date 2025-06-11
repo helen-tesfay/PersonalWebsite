@@ -6,6 +6,31 @@ from streamlit_lottie import st_lottie
 
 st.set_page_config(page_title="Welcome!", page_icon=":tada:", layout="wide")
 
+# ---- Background ----
+custom_css = """
+<style>
+    /* Main page background */
+    [data-testid="stAppViewContainer"] {
+        background-image: url("https://preview.colorkit.co/color/a66f6f.png?size=wallpaper&static=true");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+
+    /* Make header transparent */
+    [data-testid="stHeader"] {
+        background-color: rgba(0, 0, 0, 0);
+    }
+
+    /* Adjust the toolbar position */
+    [data-testid="stToolbar"] {
+        right: 2rem;
+
+    }
+</style>
+"""
+
+st.markdown(custom_css, unsafe_allow_html=True)
+
 # Animations
 def load_lottieurl(url: str):
       r = requests.get(url)
@@ -56,31 +81,6 @@ with st.container():
     st.write("Email: helen.h.tesfay@gmail.com")
     st.write("GitHub: https://github.com/helen-tesfay")
     st.write("LinkedIn: https://linkedin.com/in/helen-h-tesfay")
-
-# ---- Background ----
-custom_css = """
-<style>
-    /* Main page background */
-    [data-testid="stAppViewContainer"] {
-        background-image: url("https://preview.colorkit.co/color/a66f6f.png?size=wallpaper&static=true");
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center;
-
-    /* Make header transparent */
-    [data-testid="stHeader"] {
-        background-color: rgba(0, 0, 0, 0);
-    }
-
-    /* Adjust the toolbar position */
-    [data-testid="stToolbar"] {
-        right: 2rem;
-
-    }
-</style>
-"""
-
-st.markdown(custom_css, unsafe_allow_html=True)
 
 # ---- Experience ---- 
 with st.container():
