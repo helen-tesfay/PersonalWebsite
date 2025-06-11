@@ -28,7 +28,6 @@ custom_css = """
     }
 </style>
 """
-
 st.markdown(custom_css, unsafe_allow_html=True)
 
 # Animations
@@ -37,6 +36,13 @@ def load_lottieurl(url: str):
       if r.status_code != 200:
         return None
       return r.json()
+
+# Animation
+lottie_file = load_lottieurl("https://lottie.host/d7d83113-0460-40f7-b351-a61244ed9b9e/PfxGA5EEnx.json")
+
+# Animation
+    with right_column:
+       st_lottie(lottie_file, height=400, key="coding")
 
 # Font
 # st.markdown(
@@ -50,7 +56,12 @@ def load_lottieurl(url: str):
 #    unsafe_allow_html=True
 # )
 
-# CSS styling for "Let's Be Friends"
+# Images
+img_joes_automotive = Image.open("joesauto.jpg")
+img_parking_ticket = Image.open("parkingticket.jpg")
+img_ship_image = Image.open("shipimage.jpg")
+
+# CSS styling for "Contact Me" Section
 def style_css(file_name):
     with open(file_name) as f:
         st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
@@ -62,14 +73,6 @@ def style_toml(file_name):
         st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
 
 style_toml("config.toml")
-
-# Animation
-lottie_file = load_lottieurl("https://lottie.host/d7d83113-0460-40f7-b351-a61244ed9b9e/PfxGA5EEnx.json")
-
-# Images
-img_joes_automotive = Image.open("joesauto.jpg")
-img_parking_ticket = Image.open("parkingticket.jpg")
-img_ship_image = Image.open("shipimage.jpg")
 
 # ---- Intro ---- 
 with st.container():
@@ -103,10 +106,6 @@ with st.container():
 
         Check these out in more detail below!
         """)
-
-    # Animation
-    with right_column:
-       st_lottie(lottie_file, height=400, key="coding")
 
 # ----- PROJECTS -------
     with st.container():
@@ -163,7 +162,7 @@ with st.container():
             )
             st.markdown("GitHub Repository: https://github.com/helen-tesfay/Ship-CruiseShip-and-CargoShip-Classes")
 
-    # --- CONTACT ---
+    # --- CONTACT ME ---
     with st.container():
         st.write("----")
         st.header("Let's Be Friends")
