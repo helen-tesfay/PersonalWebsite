@@ -77,8 +77,8 @@ with st.container():
 
 # ---- Experience ---- 
 with st.container():
-    left_column, right_column = st.columns(2)
     st.write("---")
+    left_column, right_column = st.columns(2)
     with left_column:
         st.header("Experience")
         st.write(
