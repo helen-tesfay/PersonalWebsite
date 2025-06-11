@@ -64,12 +64,6 @@ def style_css(file_name):
 
 style_css("style.css")
 
-def style_toml(file_name):
-    with open(file_name) as f:
-        st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
-
-style_toml("config.toml")
-
 # ---- Intro ---- 
 with st.container():
     st.subheader("Welcome!")
