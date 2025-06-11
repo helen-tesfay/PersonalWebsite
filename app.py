@@ -30,7 +30,7 @@ custom_css = """
 """
 st.markdown(custom_css, unsafe_allow_html=True)
 
-# Animations
+# Animation
 def load_lottieurl(url: str):
       r = requests.get(url)
       if r.status_code != 200:
@@ -39,6 +39,9 @@ def load_lottieurl(url: str):
 
 # Animation
 lottie_file = load_lottieurl("https://lottie.host/d7d83113-0460-40f7-b351-a61244ed9b9e/PfxGA5EEnx.json")
+left_column, right_column = st.columns(2)
+with right_column:
+       st_lottie(lottie_file, height=400, key="coding")
 
 # Font
 # st.markdown(
@@ -84,7 +87,6 @@ with st.container():
 # ---- Experience ---- 
 with st.container():
     st.write("---")
-    left_column, right_column = st.columns(2)
     with left_column:
         st.header("Experience")
         st.write(
@@ -103,10 +105,6 @@ with st.container():
         Check these out in more detail below!
         """)
         
-# Animation next to the "Experience" section
-with right_column:
-       st_lottie(lottie_file, height=400, key="coding")
-    
 # ----- PROJECTS -------
 with st.container():
         st.write("----")
