@@ -108,7 +108,7 @@ with right_column:
        st_lottie(lottie_file, height=400, key="coding")
     
 # ----- PROJECTS -------
-    with st.container():
+with st.container():
         st.write("----")
         st.header("Portfolio")
 
