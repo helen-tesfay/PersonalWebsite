@@ -40,10 +40,6 @@ def load_lottieurl(url: str):
 # Animation
 lottie_file = load_lottieurl("https://lottie.host/d7d83113-0460-40f7-b351-a61244ed9b9e/PfxGA5EEnx.json")
 
-# Animation
-with right_column:
-       st_lottie(lottie_file, height=400, key="coding")
-
 # Font
 # st.markdown(
 #    """
@@ -106,7 +102,11 @@ with st.container():
 
         Check these out in more detail below!
         """)
-
+        
+# Animation next to the "Experience" section
+with right_column:
+       st_lottie(lottie_file, height=400, key="coding")
+    
 # ----- PROJECTS -------
     with st.container():
         st.write("----")
