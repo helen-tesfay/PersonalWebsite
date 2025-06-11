@@ -162,8 +162,8 @@ with st.container():
             )
             st.markdown("GitHub Repository: https://github.com/helen-tesfay/Ship-CruiseShip-and-CargoShip-Classes")
 
-    # --- CONTACT ME ---
-    with st.container():
+# --- CONTACT ME ---
+with st.container():
         st.write("----")
         st.header("Let's Be Friends")
 
