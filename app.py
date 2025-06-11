@@ -41,7 +41,7 @@ def load_lottieurl(url: str):
 lottie_file = load_lottieurl("https://lottie.host/d7d83113-0460-40f7-b351-a61244ed9b9e/PfxGA5EEnx.json")
 
 # Animation
-    with right_column:
+with right_column:
        st_lottie(lottie_file, height=400, key="coding")
 
 # Font
